@@ -46,6 +46,7 @@ function Contact() {
             <textarea rows="4" cols="50"></textarea>
           </label>
         </div>
+        <button className="submitBtn">Gönder</button>
       </div>
     </div>
   );

@@ -506,6 +506,7 @@ body {
 }
 
 .products .container .box {
+  cursor: pointer;
   position: relative;
   flex-basis: calc(20% - 10px);
   margin: 10px;
@@ -607,4 +608,101 @@ body {
   border: 0;
   color: #fff;
   margin: 15px 0;
+}
+
+/***********************************************************************OURSTORE***********************************************************************/
+.ourStores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.ourStores .container {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  background-color: #fff;
+  padding: 20px;
+}
+.ourStores .container .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.ourStores .container .header .selectArea {
+  padding: 0 30px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9f9f9;
+  border: 1px solid #ebebeb;
+  flex-direction: column;
+  margin-right: 30px;
+  width: 600px;
+}
+.ourStores .container .header .selectArea select {
+  outline: none;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  height: 45px;
+  width: 200px;
+}
+.ourStores .container .header .contactMap{
+  height: 260px;
+  width: 630px;
+}
+.ourStores .container .header .contactMap iframe{
+  height: 260px;
+  width: 100%;
+}
+.ourStores .container ul{
+  width: 100%;
+  height: auto;
+}
+.ourStores .container ul li{
+  border: 1px solid  #ebebeb;
+  cursor: pointer;
+  padding: 20px;
+}
+.ourStores .container ul li:only-child {
+  background-color: #fff;
+}
+.ourStores .container ul li:nth-child(2n) {
+  background-color: #eee;
+}
+.ourStores .container ul li{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.ourStores .container ul li .buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ourStores .container ul li .buttons button.selfService{
+  background-color: #d3251c ;
+  padding: 5px 10px;
+  border-radius: 5px ;
+  border: none;
+  outline: none;
+  color: #fff;
+  margin-right: 10px;
+}
+.ourStores .container ul li .buttons button{
+  background-color: #acb47f ;
+  padding: 5px 10px;
+  border-radius: 5px ;
+  border: none;
+  outline: none;
+  color: #fff;
+  margin-right: 10px;
 }

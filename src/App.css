@@ -483,3 +483,56 @@ body {
 .aboutUs .container p {
   margin-bottom: 10px;
 }
+
+
+/***********************************************************************PRODUCTS***********************************************************************/
+
+.products {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.products .container {
+  display: flex;
+  background-color: #fff;
+  flex-wrap: wrap;
+  width: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+}
+.products .container .boxOne {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.products .container .boxTwo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+.products .container .box {
+  position: relative;
+  flex-basis: calc(20% - 10px); 
+  margin: 10px;
+  
+}
+
+.products .container img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  filter: brightness(.7);
+}
+
+.products .container span {
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+  font-weight: 600;
+  font-size: 40px;
+  color: #fff;
+  padding: 5px;
+}

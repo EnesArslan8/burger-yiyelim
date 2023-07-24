@@ -22,6 +22,7 @@ body {
   max-height: 100px;
   height: auto;
 }
+
 .nav {
   display: flex;
   align-items: center;
@@ -44,6 +45,7 @@ body {
   border-radius: 15px;
   box-shadow: 0 4px 16px rgba(1, 1, 1, 0.15);
 }
+
 .navBar .nav .link {
   display: flex;
   align-items: center;
@@ -52,6 +54,7 @@ body {
   min-height: 84px;
   max-height: 100px;
 }
+
 .navBar .nav .link .labelLink {
   cursor: pointer;
   font-weight: 700;
@@ -77,6 +80,7 @@ body {
   border: none;
   width: auto;
 }
+
 .navBar .nav button a {
   padding: 10px 15px;
   background: #fec52e;
@@ -84,6 +88,7 @@ body {
   font-weight: 800;
   font-size: 16px;
 }
+
 .navBar .nav .btn {
   margin-bottom: auto;
 }
@@ -104,15 +109,18 @@ body {
   gap: 30px;
   width: 55%;
 }
+
+
 .imgArea img {
   height: 455px;
   width: 500px;
 }
+
+
 .searchStore {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
   margin-top: 30px;
   width: 55%;
   height: 500px;
@@ -129,6 +137,7 @@ body {
   padding: 10px 0;
   color: #fff;
 }
+
 .searchStore p {
   font-weight: 500;
   font-size: 30px;
@@ -138,6 +147,8 @@ body {
   padding: 10px 0;
   color: #fff;
 }
+
+
 .searchStore .searchArea {
   margin-left: 50px;
 }
@@ -218,7 +229,6 @@ body {
   height: 500px;
   width: 65%;
   display: flex;
-  /* align-items: center; */
   justify-content: center;
 }
 .footer .footer-header h3 {
@@ -351,4 +361,125 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .navBar {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .nav {
+    flex-direction: column;
+  }
+  .navBar img {
+    margin-bottom: 20px;
+  }
+  .navBar .nav .link {
+    flex-direction: column;
+  }
+  .navBar .nav button {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .navBar .nav button a {
+    font-size: 14px;
+  }
+  .imgArea {
+    flex-direction: column;
+  }
+  .searchStore h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .searchStore p {
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .searchStore .searchArea {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .boxes {
+    width: 80%;
+    flex-direction: column;
+  }
+  .footer .footer-header {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1024px) {
+  .imgArea img {
+    height: 350px;
+    width: 400px;
+  }
+  .searchStore {
+    width: 70%;
+  }
+  .boxes .box img {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (max-width: 480px) {
+  .imgArea img {
+    height: 250px;
+    width: 300px;
+  }
+  .searchStore {
+    width: 80%;
+    height: auto;
+  }
+  .searchStore .searchArea .input input {
+    width: 70%;
+  }
+  .boxes .box img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+
+
+
+/***********************************************************************ABOUT US***********************************************************************/
+.aboutUs{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.aboutUs .container{
+  width: 60%;
+  height: auto;
+  background-color: #fff;
+  padding: 10px 15px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+}
+.aboutUs .container .about-img {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.aboutUs .container .about-img img{
+  width: 1050px;
+  height: 300px;
+}
+.aboutUs .container .about-img .about-about{
+  position: absolute;
+  bottom: 9px;
+  color: #fff;
+  right: 30px;
+  font-size: 40px;
+  font-weight: 600;
+} 
+.aboutUs .container .about-title{
+  margin-bottom: 20px;
+}
+.aboutUs .container .strongText{
+  margin: 10px 0 0 0 ;
+}
+.aboutUs .container p {
+  margin-bottom: 10px;
 }

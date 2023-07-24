@@ -1,8 +1,9 @@
 import React from 'react'
+import OurStore from './OurStore'
 
 function OrderBrunch() {
   return (
-    <div>OrderBrunch</div>
+    <div><OurStore></OurStore></div>
   )
 }
 

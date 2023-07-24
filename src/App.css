@@ -667,7 +667,6 @@ body {
 }
 .ourStores .container ul li{
   border: 1px solid  #ebebeb;
-  cursor: pointer;
   padding: 20px;
 }
 .ourStores .container ul li:only-child {
@@ -689,6 +688,7 @@ body {
   justify-content: center;
 }
 .ourStores .container ul li .buttons button.selfService{
+  cursor: pointer;
   background-color: #d3251c ;
   padding: 5px 10px;
   border-radius: 5px ;
@@ -699,6 +699,7 @@ body {
 }
 .ourStores .container ul li .buttons button{
   background-color: #acb47f ;
+  cursor: pointer;
   padding: 5px 10px;
   border-radius: 5px ;
   border: none;

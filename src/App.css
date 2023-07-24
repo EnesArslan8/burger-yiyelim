@@ -1,38 +1,354 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  height: 100%;
+  width: 100%;
+  background: url(https://kebanet.restapp.com/assets/img/by_bg0523.png);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navBar {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #940c00;
+  box-shadow: 0 4px 16px rgba(1, 1, 1, 0.15);
+  min-height: 84px;
+  max-height: 100px;
+  height: auto;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 78%;
+  min-height: 84px;
+  max-height: 100px;
+  height: auto;
+}
+
+.navBar img {
+  background-color: #fff;
+  width: 100%;
+  max-width: 160px;
+  display: flex;
+  align-items: center;
+  height: 150px;
+  padding-top: 40px;
+  padding: 40px 0 20px 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 16px rgba(1, 1, 1, 0.15);
+}
+.navBar .nav .link {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+  min-height: 84px;
+  max-height: 100px;
+}
+.navBar .nav .link .labelLink {
+  cursor: pointer;
+  font-weight: 700;
+  padding: 37px 20px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.icon {
+  margin-right: 10px;
+  font-size: 25px;
+  font-weight: 700;
+}
+.navBar .nav button {
+  padding: 10px 15px;
+  background: #fec52e;
+  color: #241e20;
+  border-radius: 4px;
+  margin-top: 28px;
+  margin-left: 15px;
+  outline: none;
+  font-weight: 600;
+  border: none;
+  width: auto;
+}
+.navBar .nav button a {
+  padding: 10px 15px;
+  background: #fec52e;
+  color: #241e20;
+  font-weight: 800;
+  font-size: 16px;
+}
+.navBar .nav .btn {
+  margin-bottom: auto;
+}
+.container {
+  margin: 85px 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.imgArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 30px;
+  width: 55%;
+}
+.imgArea img {
+  height: 455px;
+  width: 500px;
+}
+.searchStore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: 30px;
+  width: 55%;
+  height: 500px;
+  background-image: linear-gradient(to right, #544a7d85, #ffd4528c),
+    url(https://www.burgeryiyelim.com/templates/website/tema-1/assets/images/map_bg2.jpg);
 }
 
-.App-link {
-  color: #61dafb;
+.searchStore h2 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 50px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  padding: 10px 0;
+  color: #fff;
 }
+.searchStore p {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 50px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  padding: 10px 0;
+  color: #fff;
+}
+.searchStore .searchArea {
+  margin-left: 50px;
+}
+.searchStore .searchArea .input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.searchStore .searchArea .input input {
+  width: 50%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  height: 40px;
+  padding: 10px 20px;
+}
+.searchStore .searchArea .input button {
+  position: absolute;
+  cursor: pointer;
+  left: 390px;
+  padding: 5px 10px;
+  height: 30px;
+  color: #fff;
+  border: none;
+  outline: none;
+  background-color: #46a14a;
+  width: 90px;
+  border-radius: 10px;
+}
+.boxes {
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+}
+.boxes .box {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  height: 100%;
+}
+.boxes .box .boxLink {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boxes .box img {
+  filter: brightness(0.7);
+  width: 300px;
+  height: 300px;
+}
+.boxes .box h1 {
+  position: absolute;
+  font-size: 30px;
+  color: #fff;
+  top: center;
+  left: center;
+}
+.boxes .box .mg {
+  margin-left: 20px;
+}
+.footer {
+  height: 750px;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: #fff;
+  flex-direction: column;
+}
+.footer .footer-header {
+  height: 500px;
+  width: 65%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+.footer .footer-header h3 {
+  width: 100%;
+  font-weight: 600;
+  padding: 0px 20px 20px 0;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.5);
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  margin: 0 0 20px 0;
+}
+.footer .footer-header .footer-description {
+  color: #888;
+  font-size: 14px;
+  white-space: pre-wrap;
+  line-height: 26px;
+}
+.footer-box {
+  width: 25%;
+  height: 200px;
+  padding: 20px;
+}
+.langBtn {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 0 0;
+}
+.langBtn button {
+  background-color: #aeaeae;
+  width: 35px;
+  font-weight: 600;
+  height: 30px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
+  outline: none;
+}
+.langBtn .select {
+  border: 0;
+  background: #ededed;
+  height: 30px;
+  border-radius: 0 4px 4px 0;
+  font-weight: 600;
+  max-width: 110px;
+}
+.list {
+  list-style: none;
+}
+.list li {
+  line-height: unset;
+  color: #cccccc;
+  font-size: 13px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  letter-spacing: 0.2pt;
+}
+.footer-location{
+  width: 100%;
+  display: flex;
+  color: #cccccc;
+  font-size: 14px;
+}
+.footer-location .icon {
+  font-size: 13px;
+}
+.footer-location .mail{
+  margin-top: 20px;
+}
+.footer .socials{
+  display: flex;
+  margin-top: 30px;
+}
+.footer .socials .social{
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  font-size: 15px;
+}
+.footer .sponsors{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 28px;
+}
+.footer .sponsors img{
+  height: 100%;
+  width: auto;
+  margin-right: 5px;
+  margin-bottom: 40px;
+}
+.footer .redText{
+  color: red;
+}
+.footer .barcodeArea{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65%;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+}
+.footer .barcode{
+  width: 100px;
+  height: 120px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.footer .footer-foot{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #888;
+  font-size: 13px;
+}
+.footer .footer-foot .poweredBy{
+  color: #ccc;
+}
+.footer .footer-foot img{
+  height: 35px;
+  width: auto;
+  margin: 5px;
+}
+.footer .footer-foot .footer-sertifika{
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
